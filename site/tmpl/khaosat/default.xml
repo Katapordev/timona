@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Khảo Sát">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_TIMONA"
+		/>
+		<message>
+			<![CDATA[Khảo Sát]]>
+		</message>
+	</layout>
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic"	label="Custom">
+
+		<field
+			name="KhaoSat"
+			type="list"
+			label="Loại Khảo Sát"
+			class="custom-select-color-state"
+			validate="options"
+			>
+			<option value="2">Kết Thúc</option>
+			<option value="1">Bắt Đầu</option>
+		</field>
+			
+		<field
+			name="idKS"
+			type="sql"
+			default="10"
+			label="Chọn Khảo Sát"
+			query="SELECT id, TenKS FROM #__timona_khaosat"
+			key_field="id"
+			value_field="TenKS"
+			required="true"
+			header="Vui Lòng Chọn Khảo Sát"
+			/>
+		
+		</fieldset>
+	</fields>
+	
+	
+</metadata>

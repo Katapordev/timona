@@ -68,7 +68,8 @@ class DangkyhocController extends BaseController
 		$result = $db->insertObject('#__timona_hocvien', $profile);	
 	  	$kq = new \stdClass;
 	  	$kq->status = $result;
-		$kq->content =$dulieu->hoten; 	
+		$kq->hoten =$dulieu->hoten; 
+	  	$kq->sdt =$dulieu->sdt; 
 		echo json_encode($kq);
 			}
   public function DangkyGiam50()

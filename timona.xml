@@ -7,13 +7,15 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@timona.edu.vn</authorEmail>
 	<authorUrl>www.timona.edu.vn</authorUrl>
-	<version>4.0.1</version>
+	<version>4.0.3</version>
 	<description>COM_TIMONA_XML_DESCRIPTION</description>
 	<namespace path="src">Joomla\Component\Timona</namespace>
 	
 	<files folder="site">
 		<folder>src</folder>
 		<folder>tmpl</folder>
+		<folder>js</folder>
+		<folder>css</folder>
 	</files>
 	
 	<languages folder="site">
@@ -62,10 +64,7 @@
 		</languages>
 		
 	</administration>
-	
-		<updateservers>
-	<server type="extension" name="Timona Updates">https://kataprodev.com/updateserver/timonaupdate.xml</server>
+			<updateservers>
+	<server type="extension" name="Katas Updates">https://github.com/Katapordev/com_timona/raw/master/timonaupdate.xml</server>
 	</updateservers>
-	
-	
 </extension>

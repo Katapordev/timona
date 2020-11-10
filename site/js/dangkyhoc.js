@@ -1,11 +1,24 @@
-angular.module('Timona').controller('Dangkyhoc', function($scope, $http ,$window) {
+angular.module('Timona').controller('Dangkyhoc', function($scope, $http ,$window,$firebase,$firebaseAuth,$firebaseObject,$firebaseArray,) {
 
+ var ref = firebase.database().ref();
+  $scope.notificaHVs= $firebaseArray(ref);
 	$scope.empty = {};
 	$scope.notify = 0;
 	$scope.content = '';
 	$scope.validate = '';
 	var empty = angular.copy($scope.empty); 
 
+$scope.notinewhv = function(hoten,sdt)
+{
+	 var data = {hoten:hoten, sdt: sdt,status:1};
+    $scope.notificaHVs.$add(data);	
+	console.log('Them Ok');
+}
+	
+	
+ 
+	
+	
 $scope.CheckPass = function(dulieu) {
 	console.log(dulieu);
 	
@@ -25,7 +38,8 @@ $scope.Dangkyhoc = function(dulieu) {
     .then(function(data) { 
   		console.log(data);
 	   $scope.notify = data.data.status;
-	   $scope.content = data.data.content;
+	   $scope.content = data.data.hoten;
+	   $scope.notinewhv(data.data.hoten,data.data.sdt);
     }); 
 			
 		}

@@ -1,0 +1,20 @@
+.avatar
+{
+width: 50px;
+height: 50px;
+font-size: 30px;
+}
+.popover-header {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+.nav-item .active
+{
+	background-color: #FFB100!important;
+	color: white!important;
+}

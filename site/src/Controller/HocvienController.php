@@ -59,6 +59,22 @@ class HocvienController extends BaseController
         $db->execute();
 		echo $data->name;
     }
+	
+	
+	public function Formdangky()
+		{
+		$db = Factory::getDbo();			
+		$query = $db->getQuery(true);
+		$query->select(array('id','idUser','TenHV','SDT','idGT','LinkBaiViet','LoaiKH','Ngaytao'))->from($db->quoteName('#__timona_hocvien'))->order('id DESC');				
+		$db->setQuery($query);
+		$row = $db->loadObjectList();
+		echo json_encode((array)$row);
+		}
+	
+	
+	
+	
+	
 
 }
 

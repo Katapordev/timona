@@ -6,4 +6,10 @@
 <file name="filter_banners.xml" server="tazaskin.com/public_html/timona/" local="132481514804308552" remote="132414217200000000" Dst="0" />
 <file name="filter_clients.xml" server="tazaskin.com/public_html/timona/" local="132481514804738285" remote="132414217200000000" Dst="0" />
 <file name="filter_tracks.xml" server="tazaskin.com/public_html/timona/" local="132481514804838226" remote="132414217200000000" Dst="0" />
+<file name="banner.xml" server="103.221.222.71/public_html/timona/" local="132494560935532101" remote="132414217200000000" Dst="0" />
+<file name="client.xml" server="103.221.222.71/public_html/timona/" local="132494560935791947" remote="132414217200000000" Dst="0" />
+<file name="download.xml" server="103.221.222.71/public_html/timona/" local="132494560936141725" remote="132414217200000000" Dst="0" />
+<file name="filter_banners.xml" server="103.221.222.71/public_html/timona/" local="132494560936411558" remote="132414217200000000" Dst="0" />
+<file name="filter_clients.xml" server="103.221.222.71/public_html/timona/" local="132494560936661408" remote="132414217200000000" Dst="0" />
+<file name="filter_tracks.xml" server="103.221.222.71/public_html/timona/" local="132494560936911260" remote="132414217200000000" Dst="0" />
 </dwsync>

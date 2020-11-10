@@ -1,11 +1,3 @@
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
 angular.module('Timona').controller('Timonalogin', function($scope, $http ,$window,$filter) {
 
 $scope.newuser ={};
@@ -14,12 +6,16 @@ $scope.FReg = 0;
 $scope.disable = '';
 $scope.empty = "";
 var empty = angular.copy($scope.empty);  
+$scope.logintitle = "Đăng Nhập";
 $scope.Reset =function()
 {
 	$scope.user={};
 	$scope.FOTP = 0;
 	$scope.disable = '';
 	$scope.mess='';
+	$('.dangnhap').addClass('d-block');
+	$('.dangky').addClass('d-none');
+	$scope.logintitle = "Đăng Nhập";
 }
 	
 	
@@ -86,12 +82,15 @@ $scope.Register = function(sdt,pass){
 
 
 $scope.Dangky = function() {
-	$('#dangnhap').modal('hide');
-	$('#dangky').modal('show');
+	$('.dangnhap').addClass('d-none');
+	$('.dangnhap').removeClass('d-block');
+	$('.dangky').removeClass('d-none');
+	$scope.logintitle = "Đăng Ký";
   }; 
 $scope.Dangnhap = function() {
-	$('#dangnhap').modal('show');
-	$('#dangky').modal('hide');
+	$('.dangnhap').addClass('d-block');
+	$('.dangky').addClass('d-none');
+	$scope.logintitle = "Đăng Nhập";
   }; 
 
 $scope.CheckSDT = function(dulieu) {

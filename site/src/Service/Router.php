@@ -68,7 +68,10 @@ class Router extends RouterView
 		$Giaidap->setKey('id');
 		$this->registerView($Giaidap);
 		$this->registerView(new RouterViewConfiguration('user'));
-		
+		$this->registerView(new RouterViewConfiguration('nhanvien'));
+		$this->registerView(new RouterViewConfiguration('lichhen'));
+		$this->registerView(new RouterViewConfiguration('hocvien'));
+		$this->registerView(new RouterViewConfiguration('khaosat'));
 		parent::__construct($app, $menu);
 
 		$this->attachRule(new MenuRules($this));
