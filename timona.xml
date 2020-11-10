@@ -65,6 +65,6 @@
 		
 	</administration>
 			<updateservers>
-	<server type="extension" name="Katas Updates">https://github.com/Katapordev/com_timona/raw/master/timonaupdate.xml</server>
+	<server type="extension" name="Timona Updates">https://github.com/Katapordev/timona/raw/main/timonaupdate.xml</server>
 	</updateservers>
 </extension>
